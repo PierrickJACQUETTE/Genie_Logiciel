@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="../../favicon.ico">
+
+  <title>Aircare</title>
+  <script src="https://www.w3schools.com/lib/w3data.js"></script>
+  <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+
+  <link href="style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <div w3-include-html="nav_mro.html" class="content"></div>
+
+  <div class="container theme-showcase" role="main">
+
+    <div class="jumbotron principal">
+      <h1>Maintenance List</h1>
+
+      <div class="row">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th class="center">Id Maintenance</th>
+              <th class="center">Id Plane</th>
+              <th class="center">Date</th>
+            </tr>
+          </thead>
+          <tbody class="maintenance-urgent" id="maintenanceMRO">
+            <script id="templateExample" type="text/template"">
+              <td>
+                <%= attribute %>
+              </td>
+            </script>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="bower_components/bootstrap/assets/js/vendor/jquery.min.js"><\/script>')</script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script>
+    w3IncludeHTML();
+  </script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+  <script type="text/javascript" src="maintenance_list_mro.js"></script>
+</body>
+</html>

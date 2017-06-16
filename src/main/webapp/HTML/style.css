@@ -1,0 +1,96 @@
+.principal{
+	margin-top: 7%;
+	padding: 1%;
+	border-radius: 15px;
+}
+
+.ligne{
+	padding-top:3%;
+}
+
+.content{
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+
+.plane-urgent{
+	color: #FF0000;
+}
+.noir{
+	color: #000000;
+}
+
+.mid{
+	margin-right: 2%;
+	margin-left: 2%;
+}
+.btn-gris{
+	background-color: #999999;
+	color : #EEEEEE;
+}
+.table-align{
+	text-align: centre;
+}
+.flight{
+	margin-top: 3%;
+}
+
+.last{
+	padding-bottom: 5%;
+}
+
+.right{
+	text-align: right;
+}
+
+.list2 table {
+        width: 100%;
+    }
+
+.list2 thead, .list2 tbody, .list2 tr, .list2 td, .list2 th { display: block; }
+
+.list2 tr:after {
+    content: ' ';
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+
+.list2 thead th {
+    height: 30px;
+
+    /*text-align: left;*/
+}
+
+.list2 tbody {
+    height: 360px;
+    overflow-y: auto;
+}
+
+.list2 thead {
+    /* fallback */
+}
+
+
+.list2 tbody td, .list2 thead th {
+    width: 25%;
+    float: left;
+}
+
+.ligne-titre{
+	padding-top: 5%;
+}
+
+.down{
+	padding-top: 5%;
+}
+
+.btn{
+	margin-right: 2%;
+}
+
+#detailPlanning {     
+    position: absolute; 
+    top: 0px;  
+    left: 0px;           
+} 

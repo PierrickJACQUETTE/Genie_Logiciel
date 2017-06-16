@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Aircare</title>
+    <script src="https://www.w3schools.com/lib/w3data.js"></script>
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+  <div w3-include-html="nav.html" class="content"></div>
+    <div class="container theme-showcase" role="main">
+
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron principal">
+        <h1>Add Task</h1>
+        <div class="row">
+          <div class="col-xs-4 col-md-4">
+            <div class="col-xs-8 col-md-8 col-xs-offset-2 col-xd-offset-2">
+              <label  class="col-2 col-form-label">Plane</label>
+              <select class="form-control" id="planeNum" onchange="readDataPlane()"></select>
+            </div>
+          </div>
+          <div class="col-xs-4 col-md-4">
+            <div class="col-xs-8 col-md-8 col-xs-offset-2 col-xd-offset-2">
+              <label for="date-input" class="col-2 col-form-label">Date</label>
+              <input class="form-control" type="date" id="date-input" value="javascript:document.write(Date()+'.')" onchange="generatePlanning(this)"></input>
+            </div>
+          </div>
+          <div class="col-xs-4 col-md-4">
+            <div class="col-xs-8 col-md-8 col-xs-offset-2 col-xd-offset-2">
+              <label for="time-input" class="col-2 col-form-label">Time</label>
+              <input class="form-control" type="time" id="time-input"></input>
+            </div>
+          </div>
+        </div>
+
+        <div class="row ligne">
+          <div class="col-xs-4 col-md-4">
+            <div class="col-xs-8 col-md-8 col-xs-offset-2 col-xd-offset-2">
+              <label  class="col-2 col-form-label">MRO</label>
+              <select  class="form-control" id="mroNum" onchange="readDataMro()"></select>
+            </div>
+          </div>
+          <div class="col-xs-4 col-md-4">
+            <div class="col-xs-8 col-md-8 col-xs-offset-2 col-xd-offset-2">
+              <label  class="col-2 col-form-label">Maintenance id</label>
+              <select class="form-control" id="maintenanceNum" onchange="readDataCate()"></select>
+            </div>
+          </div>
+          <div class="col-xs-4 col-md-4">
+            <div class="col-xs-8 col-md-8 col-xs-offset-2 col-xd-offset-2">
+              <label  class="col-2 col-form-label">Task</label>
+              <select class="form-control" id="taskNum" onchange="readDataIdTask()"></select>
+            </div>
+          </div>
+        </div>
+
+        <div class="row ligne last">
+          <div class="col-xs-4 col-md-4">
+            <div class="col-xs-8 col-md-8 col-xs-offset-2 col-xd-offset-2">
+              <label  class="col-2 col-form-label">Hangar</label>
+              <div class="row">
+                <div class="col-xs-6 col-md-6">
+                  <input type="radio" name="hangar" value="Yes"> Yes</input>
+                </div>
+                <div class="col-xs-6 col-md-6">
+                  <input type="radio" name="hangar" value="No" checked="true"> No</input>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-8 col-md-8">
+              <div class="right down">
+                <button type="button" class="btn btn-success" id="details" onclick="details()">Details</button>
+                <button type="button" class="btn btn-success" onclick="validate()">Validate</button>
+              </div>
+          </div>
+        </div>
+      </div>
+  <!-- PROGRESS -->
+  
+  <div class="row"></div>
+  <div class="dropdown theme-dropdown clearfix pull-right">
+    <a href="#" class="dropdown-toggle btn" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">All<span class="caret"></span></a>
+    <ul class="dropdown-menu" id="selectPlanningMode">
+      <li class="selectPlanningMode"><a href="#">Detail</a></li>
+    </ul>
+  </div>
+  <div class="flight">
+    <h3>Planning</h3>
+    
+    <div id="detailPlanning"> </div>
+    <div class="progress" id="planningLine"></div> 
+  </div>
+</div> <!-- /container -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery</script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- include jQuery -->
+      <!-- include compiled plugins -->
+      <!-- include jQuery -->
+
+        <!-- include compiled plugins -->
+      <script>
+          w3IncludeHTML();
+      </script>
+      <script type="text/javascript" src="add_task.js"></script>
+	  <script type="text/javascript" src="parse.js"></script>
+  </body>
+</html>

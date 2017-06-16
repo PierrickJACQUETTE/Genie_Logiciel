@@ -1,0 +1,109 @@
+
+p{
+	text-align: center;
+}
+
+
+.btn{
+
+}
+
+div#menu{
+	margin-top: 20px; 
+}
+
+div#img{
+	margin-top: 20px; 
+}
+
+
+
+
+div.progress{
+	margin-left: 20%;
+   margin-right: 20%;
+}
+
+div.table{
+	padding-left: 20%;
+   	padding-right: 20%;
+}
+
+#p{
+	font-size: 1.2em; 
+	text-align: center;
+}
+#menu{
+
+	text-align: left;
+}
+
+#chek1{
+	text-align: center;
+}
+
+#ligne3{
+	text-align: right;
+	margin-left: auto;
+	margin-top: 150px;  
+
+}
+
+#flytInfo{
+
+	font-size:  2em; 
+	text-align: center;
+}
+
+#img{
+	text-align: right;
+
+}
+
+#checkbox{
+	border: 2px black solid; 
+	text-align: left;
+
+}
+
+
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: auto;
+
+
+}
+
+div#btn{
+	margin-left: 250px; 
+}
+
+div#ligne{
+	text-align: right;
+	margin-left: auto;
+	margin-top: 150px; 
+}
+.ligne1{
+	margin-top: 50px;
+	margin-bottom: 50px; 
+
+}
+#urgent{
+	color: #FF0000;
+}
+#green{
+	background-color:#00FF00;
+}
+#blue{
+	background-color:#00FFFF;
+}
+#yellow{
+	background-color:#FFFF00;
+}
+
+th{
+	text-align: center;
+}
+
